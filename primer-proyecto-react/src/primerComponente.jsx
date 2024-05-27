@@ -1,6 +1,7 @@
+import './primerComponente.css'
 
 const string='esto es un texto'
-const numbre=123456
+const number=123456
 const array=['Curso de react','yotube',4,1000000]
 const boolean=true
 const funcion=()=>1+1
@@ -9,10 +10,26 @@ const fecha=new Date()
 
 
 
+
+
 export const PrimerComponente = () => {
   return (
 /*     <h1>practicando con REACT</h1>
- */   <h1>{JSON.stringify(objeto)}</h1>
+ */  <>
+    <h1>{JSON.stringify(objeto)}</h1>
+    <h1>
+        practicando react con vite 
+    </h1>
+
+    <p>{string}</p>
+    <p>{number}</p>
+    <p>{array}</p>
+    <p>{boolean}</p>
+    <p>{funcion()}</p>
+    <p>{JSON.stringify(fecha)}</p>
+
+    
+ </> 
   ) 
 }
 
