@@ -1,20 +1,21 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import {PrimerComponente} from './primerComponente'
-import {PropsComponentes} from './props'
-import './styles.css'
-import {ListadoApp } from './listadoApp'
-import { ListadoAppMap} from './listadoMap'
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-import {EventDom} from './events'
+import './css/styles.css';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+
+import { ListadoMap } from './component/ListadoMap';
+
+
+
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+   
+  {/* <Props  titulo='bienbenido al mini curso practica de react '  /> */}
 
-    {/* <EventDom value={0}/>
-    <PrimerComponente/> */}
+  <ListadoMap/>
 
-    <ListadoAppMap  className=" background"></ListadoAppMap>
-    
-  </React.StrictMode>,
-)
+  
+ 
+  </React.StrictMode>
+);
